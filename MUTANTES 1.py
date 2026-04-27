@@ -3,13 +3,13 @@ def isMutant(dna):
    
     n = len(dna)
     
-    # Un tablero menor a 4x4 no puede tener secuencias de 4 letras [cite: 13]
+    # Un tablero menor a 4x4 no puede tener secuencias de 4 letras 
     if n < 4:
         return False
 
     secuencias_encontradas = 0
 
-    # Definimos las direcciones de búsqueda: (cambio_fila, cambio_columna) [cite: 13]
+    # Definimos las direcciones de búsqueda: 
     # Horizontal, Vertical, Diagonal Derecha, Diagonal Izquierda
     direcciones = [(0, 1), (1, 0), (1, 1), (1, -1)]
 
