@@ -33,16 +33,16 @@ def isMutant(dna):
                         
                         secuencias_encontradas += 1
 
-                        # Eficiencia: Si ya encontramos más de una, es mutante [cite: 13, 17]
+                        # Si ya encontramos más de una, es mutante 
                         if secuencias_encontradas > 1:
                             return True
 
-    # Si revisamos todo y no hay más de una secuencia, es humano [cite: 11]
+    # Si revisamos todo y no hay más de una secuencia, es humano 
     return False
 
-# --- Bloque de ejecución para probar en consola ---
+# Bloque de ejecución para probar en consola 
 if __name__ == "__main__":
-    # Ejemplo del PDF (Caso mutante) 
+    # Ejemplo del PDF 
     dna_mutante = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
     
     # Llamada a la función 
